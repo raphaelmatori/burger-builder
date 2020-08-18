@@ -1,0 +1,10 @@
+.MainDiv {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 650px){
+    .MainDiv{
+        flex-direction: row;
+    }
+}

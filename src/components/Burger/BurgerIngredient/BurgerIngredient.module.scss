@@ -1,0 +1,119 @@
+$z-index: (breadTop : 800,
+    tomatoes : 700,
+    lettuce : 600,
+    pickle : 500,
+    cheese : 400,
+    bacon : 300,
+    burger : 200,
+    breadBottom: 100);
+
+.BreadTop {
+    position: relative;
+    z-index: map-get($z-index, breadTop);
+}
+
+.Tomatoes {
+    position: relative;
+    margin-top: -55px;
+    z-index: map-get($z-index, tomatoes);
+
+    &+.Tomatoes {
+        z-index: map-get($z-index, tomatoes) - 1;
+    }
+
+    &+.Tomatoes+.Tomatoes {
+        z-index: map-get($z-index, tomatoes) - 2;
+    }
+}
+
+
+
+
+.Lettuce {
+    position: relative;
+    margin-top: -45px;
+    z-index: map-get($z-index, lettuce);
+
+    &+.Lettuce {
+        margin-top: -55px;
+        z-index: map-get($z-index, lettuce) - 1;
+    }
+
+    &+.Lettuce+.Lettuce {
+        margin-top: -55px;
+        z-index: map-get($z-index, lettuce) - 2;
+    }
+}
+
+
+.Pickle {
+    position: relative;
+    margin-top: -60px;
+    z-index: map-get($z-index, pickle);
+
+    &+.Pickle {
+        margin-top: -55px;
+        z-index: map-get($z-index, pickle) - 1;
+    }
+
+    &+.Pickle+.Pickle {
+        margin-top: -55px;
+        z-index: map-get($z-index, pickle) - 2;
+    }
+}
+
+
+.Cheese {
+    position: relative;
+    margin-top: -70px;
+    z-index: map-get($z-index, cheese);
+
+    &+.Cheese {
+        margin-top: -80px;
+        z-index: map-get($z-index, cheese) - 1;
+    }
+
+    &+.Cheese+.Cheese {
+        margin-top: -80px;
+        z-index: map-get($z-index, cheese) - 2;
+    }
+}
+
+.Bacon {
+    position: relative;
+    margin-top: -70px;
+    z-index: map-get($z-index, bacon);
+
+    &+.Bacon {
+        margin-top: -55px;
+        z-index: map-get($z-index, bacon) - 1;
+    }
+
+    &+.Bacon+.Bacon {
+        margin-top: -55px;
+        z-index: map-get($z-index, bacon) - 2;
+    }
+}
+
+.Burger {
+    position: relative;
+    margin-top: -55px;
+    z-index: map-get($z-index, burger);
+    transform: scaleY(0.7);
+
+    &+.Burger {
+        margin-top: -55px;
+        z-index: map-get($z-index, burger) - 1;
+    }
+
+    &+.Burger+.Burger {
+        margin-top: -55px;
+        z-index: map-get($z-index, burger) - 2;
+    }
+}
+
+.BreadBottom {
+    position: relative;
+    margin-top: -50px;
+    z-index: map-get($z-index, breadBottom);
+}
