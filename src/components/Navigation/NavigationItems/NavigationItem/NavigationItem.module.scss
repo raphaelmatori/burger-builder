@@ -5,14 +5,14 @@
     width: 100%;
 
     a {
-        color: #8f5c2c;
+        color: #AAA;
         text-decoration: none;
         width: 100%;
         box-sizing: border-box;
         display: block;
 
         &:hover, &:active, &.active {
-            color:  #40A4c8;
+            color:  #fff;
         }
     }
 }
