@@ -21,3 +21,13 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+#sensiveis
+/src/axios-orders.js
+# import axios from 'axios';
+
+# const instance = axios.create({
+#   baseURL: 'URL_AQUI'
+# });
+
+# export default instance;
