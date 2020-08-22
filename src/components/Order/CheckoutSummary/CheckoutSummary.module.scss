@@ -1,0 +1,17 @@
+.CheckoutSummary{
+    text-align: center;
+    width: 80%;
+    margin: auto;
+
+    .BurgerBox{
+        margin-top: 80px;
+        background-color: white;
+        padding: 30px;
+    }
+}
+
+@media(min-width: 600px) {
+    .CheckoutSummary{
+        width: 500px;
+    }
+}

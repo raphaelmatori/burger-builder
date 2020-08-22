@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const instance = axios.create({
-    baseURL: 'https://YOUR_FIREBASE_DATABASE_HERE.firebaseio.com/'
+    baseURL: 'https://burger-builder-fdab1.firebaseio.com/'
 });
 
 export default instance;
