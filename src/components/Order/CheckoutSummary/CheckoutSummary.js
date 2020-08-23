@@ -6,7 +6,7 @@ import Button from '../../UI/Button/Button';
 const checkoutSummary = (props) => {
     return (
         <div className={classes.CheckoutSummary}>
-            <div className={classes.BurgerBox}>
+            <div className={classes.Box}>
                 <h1>We hope it tastes well!</h1>
                 <div>
                     <Burger ingredients={props.ingredients} />

@@ -4,7 +4,7 @@
     flex: 3;
     justify-content: center;
     min-height: calc(50vh - 75px);
-    width: 305px;
+    min-width: 408px;
     padding: 40px 0 20px 0;
     margin: auto;
     text-align: center;
@@ -16,9 +16,10 @@
         content: "";
         position: absolute;
         width: 100%;
-        min-width: 305px;
         top: 0;
+        left: 0;
         min-height: calc(100vh);
+        min-width: 540px;
         opacity: .6;
         z-index: -1;
         background: url("https://static.vecteezy.com/system/resources/previews/000/097/734/non_2x/school-lunch-background-vector.jpg") no-repeat center center fixed;
@@ -26,10 +27,6 @@
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
-    }
-
-    div {
-        width: 305px;
     }
 }
 
@@ -41,10 +38,7 @@
 }
 
 @media (min-width: 650px){
-    .Burger {
-        padding: 40px 0 0px 0;
-        // min-height: calc(100vh - 75px);
-    }
+
     .MainDiv{
         flex-direction: row;
         margin: 20px auto auto auto;

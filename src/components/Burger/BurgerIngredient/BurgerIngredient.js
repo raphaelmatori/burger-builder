@@ -16,28 +16,28 @@ class BurgetIngredient extends Component {
 
         switch (this.props.type) {
             case ('bread-top'):
-                ingredient = <div className={classes.BreadTop}><img src={breadTop} alt="bread top"></img></div>
+                ingredient = <div className={classes.BreadTop}><img className={classes.svg} src={breadTop} alt="bread top"></img></div>
                 break;
             case ('tomatoes'):
-                ingredient = <div className={classes.Tomatoes}><img src={tomatoes} alt="tomatoes"></img></div>
+                ingredient = <div className={classes.Tomatoes}><img className={classes.svg} src={tomatoes} alt="tomatoes"></img></div>
                 break;
             case ('lettuce'):
-                ingredient = <div className={classes.Lettuce}><img src={lettuce} alt="lettuce"></img></div>
+                ingredient = <div className={classes.Lettuce}><img className={classes.svg} src={lettuce} alt="lettuce"></img></div>
                 break;
             case ('pickle'):
-                ingredient = <div className={classes.Pickle}><img src={pickle} alt="pickle"></img></div>
+                ingredient = <div className={classes.Pickle}><img className={classes.svg} src={pickle} alt="pickle"></img></div>
                 break;
             case ('cheese'):
-                ingredient = <div className={classes.Cheese}><img src={cheese} alt="cheese"></img></div>
+                ingredient = <div className={classes.Cheese}><img className={classes.svg} src={cheese} alt="cheese"></img></div>
                 break;
             case ('bacon'):
-                ingredient = <div className={classes.Bacon}><img src={bacon} alt="bacon"></img></div>
+                ingredient = <div className={classes.Bacon}><img className={classes.svg} src={bacon} alt="bacon"></img></div>
                 break;
             case ('burger'):
-                ingredient = <div className={classes.Burger}><img src={burger} alt="burger"></img></div>
+                ingredient = <div className={classes.Burger}><img className={classes.svg} src={burger} alt="burger"></img></div>
                 break;
             case ('bread-bottom'):
-                ingredient = <div className={classes.BreadBottom}><img src={breadBottom} alt="bread bottom"></img></div>
+                ingredient = <div className={classes.BreadBottom}><img className={classes.svg} src={breadBottom} alt="bread bottom"></img></div>
                 break;
             default:
                 ingredient = null;

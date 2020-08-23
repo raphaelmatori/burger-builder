@@ -7,6 +7,11 @@ $z-index: (breadTop : 800,
     burger : 200,
     breadBottom: 100);
 
+.svg {
+    height: 100%;
+    width: 100%;
+}
+
 .BreadTop {
     position: relative;
     z-index: map-get($z-index, breadTop);
@@ -14,7 +19,7 @@ $z-index: (breadTop : 800,
 
 .Tomatoes {
     position: relative;
-    margin-top: -55px;
+    margin-top: -65px;
     z-index: map-get($z-index, tomatoes);
 
     &+.Tomatoes {
@@ -48,16 +53,16 @@ $z-index: (breadTop : 800,
 
 .Pickle {
     position: relative;
-    margin-top: -60px;
+    margin-top: -70px;
     z-index: map-get($z-index, pickle);
 
     &+.Pickle {
-        margin-top: -55px;
+        margin-top: -70px;
         z-index: map-get($z-index, pickle) - 1;
     }
 
     &+.Pickle+.Pickle {
-        margin-top: -55px;
+        margin-top: -70px;
         z-index: map-get($z-index, pickle) - 2;
     }
 }
@@ -65,16 +70,16 @@ $z-index: (breadTop : 800,
 
 .Cheese {
     position: relative;
-    margin-top: -70px;
+    margin-top: -75px;
     z-index: map-get($z-index, cheese);
 
     &+.Cheese {
-        margin-top: -80px;
+        margin-top: -82px;
         z-index: map-get($z-index, cheese) - 1;
     }
 
     &+.Cheese+.Cheese {
-        margin-top: -80px;
+        margin-top: -82px;
         z-index: map-get($z-index, cheese) - 2;
     }
 }
@@ -97,17 +102,17 @@ $z-index: (breadTop : 800,
 
 .Burger {
     position: relative;
-    margin-top: -55px;
+    margin-top: -80px;
     z-index: map-get($z-index, burger);
     transform: scaleY(0.7);
 
     &+.Burger {
-        margin-top: -55px;
+        margin-top: -60px;
         z-index: map-get($z-index, burger) - 1;
     }
 
     &+.Burger+.Burger {
-        margin-top: -55px;
+        margin-top: -60px;
         z-index: map-get($z-index, burger) - 2;
     }
 }
