@@ -11,6 +11,12 @@
     &:first-of-type {
         margin-left: 0;
     }
+
+    &:disabled {
+        border: 1px solid #aaa;
+        color: #ccc;
+        cursor: not-allowed;
+    }
 }
 
 .Success {
