@@ -14,12 +14,12 @@
 
     &::before {
         content: "";
-        position: absolute;
+        position: fixed;
         width: 100%;
         top: 0;
         left: 0;
-        min-height: calc(100vh);
-        min-width: 540px;
+        min-width: 100%;
+        min-height: 100%;
         opacity: .6;
         z-index: -1;
         background: url("https://static.vecteezy.com/system/resources/previews/000/097/734/non_2x/school-lunch-background-vector.jpg") no-repeat center center fixed;

@@ -1,9 +1,14 @@
 .Checkout{
-
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 0;
 }
 
-@media(min-width: 1010px) {
+@media(min-width: 600px) {
     .Checkout{
-        display: flex;
+        flex-direction: row;
+        margin-top: -45px;
     }
 }
