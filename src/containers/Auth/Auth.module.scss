@@ -1,11 +1,10 @@
 .Auth {
-    margin: 80px auto;
+    margin: 90px auto;
     width: 80%;
     text-align: center;
     padding-bottom:50px;
 
-    .Box{
-        margin-top: 20px;
+    &.Box{
         height: calc(100% - 80px);
         background-color: white;
         box-shadow: 0 2px 3px #ccc;

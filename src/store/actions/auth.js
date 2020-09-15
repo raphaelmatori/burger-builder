@@ -74,6 +74,7 @@ export const setAuthRedirectPath = (path) => {
     };
 };
 
+
 export const authCheckState = () => {
     return dispatch => {
         const token = localStorage.getItem('token');
