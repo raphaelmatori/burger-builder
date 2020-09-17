@@ -1,5 +1,40 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Adjustments
+
+To run this project, make sure you create a Firebase project with a "Real Time Data Base".
+
+Modify line 4 of "axios-orders.defaut.js" in root folder and change its name to "axios-orders.js".
+
+You must set the default ingredient status on your database:
+
+    {
+        ingredients: {
+            bacon: 0,
+            burger: 0,
+            cheese: 0,
+            lettuce: 0,
+            pickle: 0,
+            tomatoes: 0
+        }
+    }
+
+You also may want to use the following rules:
+
+    {
+      "rules": {
+          "ingredients": {
+        ".read": "true",
+        ".write": "true"
+      },
+        "orders": {
+          ".read": "auth != null",
+    	    ".write": "auth != null",
+          ".indexOn": ["userId"]
+        }
+      }
+    }
+
 ## Available Scripts
 
 In the project directory, you can run:
