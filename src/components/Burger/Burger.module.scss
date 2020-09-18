@@ -42,5 +42,12 @@
     .MainDiv{
         flex-direction: row;
         margin: 20px auto auto auto;
+        width: 100vw;
+    }
+}
+
+@media (max-width: 650px){
+    .Burger {
+        margin: 0;
     }
 }
